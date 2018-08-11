@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 		
 		},
 				
-		//tags="@temp",
+		tags="@test",
 		features="src/test/resources/com.LIGHTSIDEOnline1/features", 
 		glue="com.LIGHTSIDEOnline1/step_definitions"
 		,dryRun = true
