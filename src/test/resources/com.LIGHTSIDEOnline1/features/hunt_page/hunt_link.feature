@@ -2,7 +2,7 @@
 Feature: hunt page 
 
 Background: 
-	Given I open the sign in page with valid "jalabaster7f@drupal.org" and "terimapam "
+	Given I open the sign in page with valid "jalabaster7f@drupal.org" and "terimapam"
 	
 
 Scenario: Booking an available room
