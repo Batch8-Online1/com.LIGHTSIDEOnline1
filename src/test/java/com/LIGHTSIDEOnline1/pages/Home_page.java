@@ -18,6 +18,13 @@ private WebDriver driver;
 	
 	@FindBy(xpath="//h1[@class='title']")
 	public WebElement titleVA;
+	
+	@FindBy(xpath="//a[contains(text(),'hunt')]")
+	public WebElement huntButton;
+	
+	@FindBy(xpath="//h2[@class='subtitle']")
+	public WebElement huntSubtitleDate;
+	
 
 	
 }

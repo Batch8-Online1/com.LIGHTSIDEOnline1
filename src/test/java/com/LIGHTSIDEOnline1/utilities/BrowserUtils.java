@@ -21,12 +21,19 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BrowserUtils {
 	/*
 	 * switches to new window by the exact title
 	 */
+	
+	public void selectByIndex(WebElement element , int n) {
+		Select sc1= new Select(element);
+		  sc1.selectByIndex(n);
+	}
+	
 	public static void switchToWindow(String targetTitle) {
 		String origin = Driver.getDriver().getWindowHandle();
 		for (String handle : Driver.getDriver().getWindowHandles()) {

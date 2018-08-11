@@ -53,7 +53,6 @@ public class Signin_page_stepDefs {
 	@Then("the error message should be displayed")
 	public void the_error_message_should_be_displayed() {
 		signinpage.singinButton.click();
-		System.out.println(signinpage.errorMessage.getText());
 	  assertTrue(signinpage.errorMessage.isDisplayed());
 	}
 	

@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 import com.LIGHTSIDEOnline1.utilities.ConfigurationReader;
 import com.LIGHTSIDEOnline1.utilities.Driver;
@@ -13,11 +14,12 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 public class Hooks {
+	WebDriver driver = Driver.getDriver();
 
 	@Before
 	public void setUp() {
-		Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		Driver.getDriver().manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		//Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 	}
 

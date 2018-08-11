@@ -1,10 +1,9 @@
-@test
 Feature: hunt page 
 
 Background: 
-	Given I open the sign in page with valid "jalabaster7f@drupal.org" and "terimapam"
+	Given I open the sign in page with valid username "jalabaster7f@drupal.org" and password "terimapam"
 	
-
+@test
 Scenario: Booking an available room
 	When user get hunt for spot page 
 	Then subtitle should be displayed 
