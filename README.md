@@ -15,3 +15,17 @@ note: when trying to search for available room after entering date and time ,
 the search button does not work for chrome browser ,
 i tried many things to solve this problem , my final solution is changing browser to firefox. 
 if you can find a better way , fix it .
+    what did i try for solution ( these experiments did not work)
+    - checked the version of chrome and match with bonigarcia browser
+    - updated chrome and bonigarcia dependency 
+    - checked by manual import driver from my local 
+    - added many wait 
+    - tried 4 different locator and 2 diff elemend to click search button 
+    - recursive method to call until search button navigate to forward 
+    - changed different date and time many times 
+    
+    what did i do as a solution 
+    -change the browser to firefox it react different but still works fine on the hunt page 
+    
+   
+ 
