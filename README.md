@@ -27,6 +27,7 @@ if you can find a better way , fix it .
     
     what did i do as a solution 
     -change the browser to firefox it react different but still works fine on the hunt page 
+    - i am still working on it , could not comlete yet. 
     
    
  
