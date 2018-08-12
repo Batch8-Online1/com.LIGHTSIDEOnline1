@@ -15,6 +15,7 @@ note: when trying to search for available room after entering date and time ,
 the search button does not work for chrome browser ,
 i tried many things to solve this problem , my final solution is changing browser to firefox. 
 if you can find a better way , fix it .
+  
     what did i try for solution ( these experiments did not work)
     - checked the version of chrome and match with bonigarcia browser
     - updated chrome and bonigarcia dependency 
