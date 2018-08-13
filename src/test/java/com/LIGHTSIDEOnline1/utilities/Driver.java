@@ -22,6 +22,8 @@ public class Driver {
 				driver = new FirefoxDriver();
 				break;
 			case "chrome":
+//				System.setProperty("webdriver.chrome.driver",
+//						"C:\\Users\\Asus\\Documents\\selenium dependencies\\drivers\\chromedriver.exe");
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				break;

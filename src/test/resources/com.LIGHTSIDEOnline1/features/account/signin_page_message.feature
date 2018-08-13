@@ -1,7 +1,7 @@
 Feature: Error message on the sign in page 
 
 Background: 
-	Given I open the sign in page 
+	Given user open the sign in page 
 
 Scenario: Sign in button 
 	When User enter an email without password 

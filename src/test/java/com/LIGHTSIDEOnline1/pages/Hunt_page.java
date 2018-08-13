@@ -15,7 +15,7 @@ private WebDriver driver;
 		PageFactory.initElements(driver,  this);
 	}
 	
-	@FindBy(xpath="//input[@id='date']")
+	@FindBy(css="#date")
 	public WebElement dateBox;
 	
 	@FindBy(xpath="//select[@id='timelineStart']")
@@ -24,9 +24,9 @@ private WebDriver driver;
 	@FindBy(xpath="//select[@id='timelineFinish']")
 	public WebElement finishTime;
 	
-	@FindBy(xpath="//i[@class='fa fa-search']")
+	@FindBy(xpath="//button[@type='submit']")
 	public WebElement searchButton;
-	
+	//i[@class='fa fa-search']
 	@FindBy(xpath="//h2[@class='subtitle']")
 	public WebElement freeSpotSubtitle;
 	
