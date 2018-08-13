@@ -1,3 +1,4 @@
+@smoke_test
 Feature: Error message on the sign in page 
 
 Background: 
@@ -20,7 +21,7 @@ Scenario: Invalid email
 Scenario: Invalid password 
 	When User try to sign in using valid email "jalabaster7f@drupal.org" and invalid password "abcd" 
 	Then the error message should be displayed 
-@ert 	
+
 Scenario Outline: Valid singin
 	When User login with valid "<email>" and "<password>"
 	Then Home page should be displayed 

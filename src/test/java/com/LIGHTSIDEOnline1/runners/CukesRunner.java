@@ -17,6 +17,6 @@ import cucumber.api.junit.Cucumber;
 		tags="@test",
 		features="src/test/resources/com.LIGHTSIDEOnline1/features", 
 		glue="com.LIGHTSIDEOnline1/step_definitions"
-		,dryRun = false
+		//,dryRun = true
 		)
 public class CukesRunner {}

@@ -1,20 +1,14 @@
 package com.LIGHTSIDEOnline1.utilities;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -28,6 +22,12 @@ public class BrowserUtils {
 	/*
 	 * switches to new window by the exact title
 	 */
+	
+	public int selectRandomNumberBetweenAtoB(int a, int b) {
+		Random rd= new Random();
+		int  n = rd.nextInt(b) + a;
+		return n;
+	}
 	
 	public void selectByIndex(WebElement element , int n) {
 		Select sc1= new Select(element);

@@ -20,8 +20,8 @@ public class Signin_page_stepDefs {
 	Home_page homePage = new Home_page();
 	WebDriver driver = Driver.getDriver();
 	
-	@Given("I open the sign in page")
-	public void i_open_the_sign_in_page() {
+	@Given("user open the sign in page")
+	public void user_open_the_sign_in_page() {
 		driver.get(ConfigurationReader.getProperty("url"));
 	}
 

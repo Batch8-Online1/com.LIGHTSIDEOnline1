@@ -1,5 +1,7 @@
 package com.LIGHTSIDEOnline1.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,6 +30,15 @@ private WebDriver driver;
 	public WebElement searchButton;
 	//i[@class='fa fa-search']
 	@FindBy(xpath="//h2[@class='subtitle']")
-	public WebElement freeSpotSubtitle;
+	public WebElement pageSubtitle;
 	
+	@FindBy(xpath="//h1[@class='title']")
+	public WebElement pageTitle;
+	
+	@FindBy(xpath="//button[@class='button is-transparent is-white']")
+	public List<WebElement> bookButtons;
+	
+	
+	@FindBy(xpath="//button[@class='button is-dark']")
+	public WebElement confirmButton;
 }
