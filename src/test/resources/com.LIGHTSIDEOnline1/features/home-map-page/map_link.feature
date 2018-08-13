@@ -1,4 +1,3 @@
-@smoke
 Feature: verify home-map page links 
 
 Background: 

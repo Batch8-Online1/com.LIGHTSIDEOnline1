@@ -81,7 +81,7 @@ public class Hunt_page_stepDefs {
 
 	@Then("user should be able to confirm an available room")
 	public void user_should_be_able_to_confirm_an_available_room() {
-		huntPage.bookButtons.get(utility.selectRandomNumberBetweenAtoB(1, huntPage.bookButtons.size())).click();
+		huntPage.bookButtons.get(utility.selectRandomNumberBetweenAtoB(1, huntPage.bookButtons.size()-1)).click();
 		waitFor(2);
 		assertEquals(huntPage.pageTitle.getText(), "booking confirmation");
 		huntPage.confirmButton.click();

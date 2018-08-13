@@ -1,6 +1,5 @@
 Feature: myself information 
 
-@temp
 Scenario Outline: 
 	Given as a "<name>" log in in the application 
 	When I hover over "webelement my link" 
