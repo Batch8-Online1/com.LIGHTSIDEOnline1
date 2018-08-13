@@ -33,7 +33,7 @@ public class Hunt_page_stepDefs {
 		signinpage.emailBox.sendKeys(email);
 		signinpage.passwordBox.sendKeys(password);
 		signinpage.singinButton.click();
-		waitFor(2);
+		waitFor(3);
 	}
 
 	@When("user get hunt for spot page")
@@ -58,18 +58,18 @@ public class Hunt_page_stepDefs {
 		huntPage.dateBox.click();
 
 		huntPage.dateBox.sendKeys(currentDay);
-		waitFor(1);
+		waitFor(2);
 		utility.selectByIndex(huntPage.startTime, utility.selectRandomNumberBetweenAtoB(1, 20));
-		waitFor(1);
+		waitFor(2);
 		utility.selectByIndex(huntPage.finishTime, 3);
-		waitFor(1);
+		waitFor(2);
 	}
 
 	@Then("user should be able to click on enabled search button")
 	public void user_should_be_able_to_click_on_enabled_search_button() {
 		assertTrue(huntPage.searchButton.isEnabled());
 		huntPage.searchButton.click();
-		waitFor(1);
+		waitFor(2);
 	}
 
 	@Then("subtitle should be displayed for free spot page")
@@ -82,10 +82,10 @@ public class Hunt_page_stepDefs {
 	@Then("user should be able to confirm an available room")
 	public void user_should_be_able_to_confirm_an_available_room() {
 		huntPage.bookButtons.get(utility.selectRandomNumberBetweenAtoB(1, huntPage.bookButtons.size())).click();
-		waitFor(1);
+		waitFor(2);
 		assertEquals(huntPage.pageTitle.getText(), "booking confirmation");
 		huntPage.confirmButton.click();
-		waitFor(1);
+		waitFor(3);
 
 	}
 
