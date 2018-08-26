@@ -39,7 +39,7 @@ public class Hunt_page_stepDefs {
 	@When("user get hunt for spot page")
 	public void user_get_hunt_for_spot_page() {
 		homePage.huntButton.click();
-		waitFor(2);
+		waitFor(20);
 	}
 
 	@Then("subtitle should be displayed")
