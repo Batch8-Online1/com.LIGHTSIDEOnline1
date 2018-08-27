@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 		
 		},
 				
-		tags="@retemp",
+		tags="@tempp",
 		features= {"src/test/resources/com.LIGHTSIDEOnline1/features",
 		"src/test/resources/com.Db/features"},
 		glue= {"com.LIGHTSIDEOnline1/step_definitions",

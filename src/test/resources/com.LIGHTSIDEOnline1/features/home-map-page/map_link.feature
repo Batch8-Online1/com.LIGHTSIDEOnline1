@@ -1,22 +1,19 @@
 Feature: verify home-map page links 
 
 Background: 
-	Given I log in to the application 
-
+	Given user logs in using "jalabaster7f@drupal.org" "terimapam"
 	
-Scenario Outline: verify the links display 
-	Then the "<menu>" should be displayed 
-	Examples: 
-		|menu|
+Scenario: verify the links display 
+	Then the menu should be displayed  
 		|map|
 		|schedule|
 		|hunt|
 		|my|
 		
 Scenario Outline: Verify the rooms clickable 
-	When I click "<roomname>" 
+	When I click each room "<roomname>" 
 	Then I should see the rooms name "<roomname>" in title 
-	Examples: 
+	Examples:
 		|roomname	|
 		|berkeley	|
 		|duke		|
@@ -24,5 +21,5 @@ Scenario Outline: Verify the rooms clickable
 		|mit		|
 		|harvard	|
 		|yale		|
-		|princeton	|
+		|princeton	|	
 		
